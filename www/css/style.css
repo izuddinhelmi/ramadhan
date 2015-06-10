@@ -1,0 +1,11 @@
+body {
+  font-family: "Proxima Nova";
+}
+body .bar.bar-stable {
+  background: #47A7DF;
+  border-color: #318EC5;
+}
+body .bar.bar-stable .title {
+  color: #fff;
+  font-weight: 600;
+}
