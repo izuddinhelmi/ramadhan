@@ -1,0 +1,363 @@
+$primary: #5539A4;
+$dark: #2D3947;
+$dark : #222;
+$background: #EFF3F6;
+$font-stack: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-extrabold-webfont.eot');
+    src: url('../fonts/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-extrabold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold') format('svg');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-semibold-webfont.eot');
+    src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: 700;
+}
+
+body {
+	font-family: "Proxima Nova", sans-serif;
+	background:#EFF3F6;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $font-stack;
+		font-weight: 600;
+	}
+
+	.bar.bar-stable {
+		background: $primary;
+		border-color: $primary;
+		/* Bar: */
+		//background-image: linear-gradient(-90deg, #DC0561 0%, #5539A4 100%);
+
+		.title {
+			color: #fff;
+			font-weight: 600;
+			text-transform: uppercase;
+			font-size: 15px;
+			letter-spacing: 1px;
+		}
+
+		.button {
+			&.back-button {
+				color: #fff;
+
+				.back-text {
+					font-family: $font-stack;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.pane, .view {
+		background: $background;
+	}
+
+	// .puasa-batal, .puasa-sunat, .puasa-makruh {
+	// 	background: #72cae9;
+	// 	.card {
+	// 		background: none;
+	// 		.item {
+	// 			background: none;
+	// 		}
+	// 		h3 {
+	// 			color: #fff !important;
+	// 		}
+	// 	}
+	// }
+	// .puasa-sunat {
+	// 	background: #57afe0;
+	// }
+	// .puasa-makruh {
+	// 	background: #338cd5;
+	// }
+
+	.tab-header {
+		background: #222;
+		color: #fff;
+		padding:20px 0;
+		text-align: center;
+
+		h1 {
+			color: #fff;
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			position: relative;
+		}
+		p {
+			font-size: 13px;
+			line-height: 1.4;
+			padding:0 9%;
+			color: rgba(255,255,255,0.8);
+			font-style: italic;
+			margin:0;
+		}
+	}
+
+	.card {
+		box-shadow: none;
+		background:#fff;
+		margin:5px;
+		min-height: 145px;
+		a {
+			text-decoration: none;
+		}
+		.item {
+			&.item-image {
+				height: 80px;
+				margin-top:10px;
+				display: -webkit-flex;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border:none;
+				img {
+					width: auto;
+					margin:0 auto;
+				}
+			}
+			&.item-title {
+				color: #000;
+				font-weight: 600;
+				font-size: 11px;
+				line-height: 1.1;
+				letter-spacing: 0.3px;
+				text-transform: uppercase;
+				white-space: normal;
+				text-align: center;
+				border:none;
+				padding:15px;
+			}
+			&.item-head {
+				font-size: 14px;
+				letter-spacing: 1px;
+				text-align: center;
+				text-transform: uppercase;
+				position: relative;
+				padding:25px 0 15px;
+				margin-bottom: 20px;
+				color: #222;
+				border:none;
+				font-weight: 600;
+				&:after {
+					content:'';
+					position: absolute;
+					height: 2px;
+					width: 100px;
+					background: #222;
+					bottom:0;
+					left:50%;
+					margin-left: -50px;
+				}
+			}
+		}
+		&.content {
+			padding:0px 20px 25px;
+			margin: 10px;
+			// .item-head {
+			// 	text-align: left;
+			// 	padding-bottom: 5px;
+			// 	margin-bottom: 15px;
+			// 	&:after {
+			// 		left:0;
+			// 		margin:0;
+			// 		width: 100%;
+			// 	}
+			// }
+			p {
+				line-height: 1.4;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			strong {
+				font-weight: 600;
+			}
+			ul, ol {
+				list-style-type: disc;
+				padding-left: 25px;
+				margin:0;
+				li {
+					line-height: 1.4;
+					margin-bottom: 13px;
+				}
+			}
+			ol {
+				list-style-type: decimal;
+			}
+		}
+	}
+
+	.item {
+		border-color: #eee;
+	}
+
+	.list {
+		.item {
+			white-space: normal;
+			line-height: 1.3;
+			font-size: 13px;
+			padding:15px;
+			letter-spacing: 0.5px;
+
+			&.item-divider {
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-size: 15px;
+			}
+
+			.flag {
+				max-width:50px;
+				padding-right: 10px;
+				img {
+					max-width: 100%;
+				}
+			}
+
+			.state {
+				font-weight: 600;
+				text-transform: uppercase;
+				color: #222;
+			}
+		}
+		&.list-states {
+			.item {
+				padding: 12px 15px;
+				line-height: 20px;
+			}
+		}
+		&.list-waktu {
+			.item {
+				padding: 13px;
+				font-size: 11px;
+				border:none;
+				&.item-divider {
+					font-size: 11px;
+					color: #222;
+				}
+				&:nth-child(odd) {
+					background: #fafafa;
+				}
+				.date {
+					text-transform: uppercase;
+					font-weight: 600;
+				}
+				.imsak, .berbuka {
+					text-align: center;
+				}
+				.ramadhan {
+					text-align: center;
+					padding:5px 15px 5px 0;
+					max-width: 45px;
+					display: flex;
+				}
+			}
+			
+		}
+	}
+
+	.tabs {
+		background: $dark;
+
+		.tab-item {
+			color: rgba(255,255,255,0.6); 
+			&.tab-item-active {
+				color: #fff;
+			}
+		}
+		.ion-ios-moon:before {
+			content: "\f468";
+			font-size: 54px;
+			position: relative;
+			top: -11px;
+		}
+		.ion-ios-moon-outline:before {
+			content: "\f467";
+			font-size: 54px;
+			position: relative;
+			top: -11px;
+		}
+	}
+
+	.zakat-wajib {
+		.item {
+			border:none;
+		}
+		.item-wajib {
+			font-size: 13px;
+			line-height: 1.35;
+		}
+		
+	}
+
+	ul.content {
+		list-style-type: disc;
+		padding-left: 25px;
+		margin:20px 20px 30px;
+		li {
+			line-height: 1.3;
+			margin-bottom: 7px;
+		}
+	}
+
+	.zakat-kadar {
+		.item-kadar {
+			font-size: 13px;
+			padding:15px;
+			letter-spacing: 0.5px;
+
+			.col:nth-child(2) {
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+
+			.col:nth-child(3) {
+				text-align: right;
+			}
+		}
+	}
+}

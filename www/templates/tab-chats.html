@@ -1,5 +1,14 @@
-<ion-view view-title="Chats">
+<ion-view view-title="Ramadhan">
   <ion-content>
+    <div class="tab-header">
+      <div class="row">
+        <div class="col align-center">
+            <h1>Terawih</h1>
+            <p>Abu Hurairah R.A. berkata : Bahawa Rasulullah S.A.W. bersabda, "Sesiapa yang melaksanakan Ramadhan dengan penuh keimanan dan pengharapan, akan diampunkan baginya dosanya yang lalu." 
+            </br>(Hadith riwayat Muslim)</p>
+        </div>
+      </div>
+    </div>
     <ion-list>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
         <img ng-src="{{chat.face}}">

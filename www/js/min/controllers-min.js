@@ -1,0 +1,1 @@
+angular.module("starter.controllers",[]).controller("PuasaCtrl",function(t){}).controller("ChatsCtrl",function(t,l){t.chats=l.all(),t.remove=function(t){l.remove(t)}}).controller("ChatDetailCtrl",function(t,l,n){t.chat=n.get(l.chatId)}).controller("AccountCtrl",function(t){t.settings={enableFriends:!0}});

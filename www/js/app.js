@@ -38,34 +38,187 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.puasa', {
+    url: '/puasa',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-puasa': {
+        templateUrl: 'templates/tab-puasa.html',
+        controller: 'PuasaCtrl'
+      }
+    }
+  })
+
+  .state('tab.puasa-definisi', {
+    url: '/puasa/definisi',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/definisi.html',
+      }
+    }
+  })
+
+  .state('tab.puasa-syarat', {
+    url: '/puasa/syarat',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/syarat-wajib.html',
+      }
+    }
+  })
+
+  .state('tab.puasa-niat', {
+    url: '/puasa/niat',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/niat.html',
+      }
+    }
+  })
+
+  .state('tab.puasa-pembatalan', {
+    url: '/puasa/pembatalan',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/batal.html',
+      }
+    }
+  })
+
+  .state('tab.puasa-sunat', {
+    url: '/puasa/sunat',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/sunat.html',
+      }
+    }
+  })
+
+  .state('tab.puasa-makruh', {
+    url: '/puasa/makruh',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/makruh.html',
+      }
+    }
+  })
+
+  .state('tab.puasa-uzur', {
+    url: '/puasa/uzur',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/uzur.html',
+      }
+    }
+  })
+
+  .state('tab.puasa-qadha', {
+    url: '/puasa/qadha',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/qadha.html',
+      }
+    }
+  })
+
+  .state('tab.puasa-fidyah', {
+    url: '/puasa/fidyah',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/fidyah.html',
       }
     }
   })
 
   .state('tab.chats', {
-      url: '/chats',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
-        }
+    url: '/chats',
+    views: {
+      'tab-chats': {
+        templateUrl: 'templates/tab-chats.html',
+        controller: 'ChatsCtrl'
       }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
+    }
+  })
+  .state('tab.chat-detail', {
+    url: '/chats/:chatId',
+    views: {
+      'tab-chats': {
+        templateUrl: 'templates/chat-detail.html',
+        controller: 'ChatDetailCtrl'
       }
-    })
+    }
+  })
+
+  .state('tab.zakat', {
+    url: '/zakat',
+    views: {
+      'tab-zakat': {
+        templateUrl: 'templates/tab-zakat.html',
+      }
+    }
+  })
+
+  .state('tab.zakat-definisi', {
+    url: '/zakat/definisi',
+    views: {
+      'tab-zakat': {
+        templateUrl: 'templates/zakat/definisi.html',
+      }
+    }
+  })
+
+  .state('tab.zakat-syarat', {
+    url: '/zakat/syarat',
+    views: {
+      'tab-zakat': {
+        templateUrl: 'templates/zakat/syarat.html',
+      }
+    }
+  })
+
+  .state('tab.zakat-waktu', {
+    url: '/zakat/waktu',
+    views: {
+      'tab-zakat': {
+        templateUrl: 'templates/zakat/waktu.html',
+      }
+    }
+  })
+
+  .state('tab.zakat-lafaz', {
+    url: '/zakat/lafaz',
+    views: {
+      'tab-zakat': {
+        templateUrl: 'templates/zakat/lafaz.html',
+      }
+    }
+  })
+
+  .state('tab.zakat-kadar', {
+    url: '/zakat/kadar',
+    views: {
+      'tab-zakat': {
+        templateUrl: 'templates/zakat/kadar.html',
+      }
+    }
+  })
+
+  .state('tab.waktu', {
+    url: '/waktu',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/tab-waktu.html',
+      }
+    }
+  })
+
+  .state('tab.waktu-perlis', {
+    url: '/waktu/perlis',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/perlis.html',
+      }
+    }
+  })
 
   .state('tab.account', {
     url: '/account',
@@ -77,7 +230,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/puasa');
 
 });

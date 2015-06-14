@@ -1,11 +1,215 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proximanova-extrabold-webfont.eot");
+  src: url("../fonts/proximanova-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-extrabold-webfont.woff2") format("woff2"), url("../fonts/proximanova-extrabold-webfont.woff") format("woff"), url("../fonts/proximanova-extrabold-webfont.ttf") format("truetype"), url("../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold") format("svg");
+  font-weight: 800; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proximanova-light-webfont.eot");
+  src: url("../fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-light-webfont.woff2") format("woff2"), url("../fonts/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova-light-webfont.ttf") format("truetype"), url("../fonts/proximanova-light-webfont.svg#proxima_novalight") format("svg");
+  font-weight: 300; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proximanova-regular-webfont.eot");
+  src: url("../fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("../fonts/proximanova-regular-webfont.woff") format("woff"), url("../fonts/proximanova-regular-webfont.ttf") format("truetype"), url("../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: 400; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proximanova-semibold-webfont.eot");
+  src: url("../fonts/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("../fonts/proximanova-semibold-webfont.woff") format("woff"), url("../fonts/proximanova-semibold-webfont.ttf") format("truetype"), url("../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold") format("svg");
+  font-weight: 600; }
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("../fonts/proximanova-bold-webfont.eot");
+  src: url("../fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../fonts/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: 700; }
 body {
-  font-family: "Proxima Nova";
-}
-body .bar.bar-stable {
-  background: #47A7DF;
-  border-color: #318EC5;
-}
-body .bar.bar-stable .title {
-  color: #fff;
-  font-weight: 600;
-}
+  font-family: "Proxima Nova", sans-serif;
+  background: #EFF3F6; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600; }
+  body .bar.bar-stable {
+    background: #5539A4;
+    border-color: #5539A4;
+    /* Bar: */ }
+    body .bar.bar-stable .title {
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 1px; }
+    body .bar.bar-stable .button.back-button {
+      color: #fff; }
+      body .bar.bar-stable .button.back-button .back-text {
+        font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px; }
+  body .pane, body .view {
+    background: #EFF3F6; }
+  body .tab-header {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; }
+    body .tab-header h1 {
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative; }
+    body .tab-header p {
+      font-size: 13px;
+      line-height: 1.4;
+      padding: 0 9%;
+      color: rgba(255, 255, 255, 0.8);
+      font-style: italic;
+      margin: 0; }
+  body .card {
+    box-shadow: none;
+    background: #fff;
+    margin: 5px;
+    min-height: 145px; }
+    body .card a {
+      text-decoration: none; }
+    body .card .item.item-image {
+      height: 80px;
+      margin-top: 10px;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: none; }
+      body .card .item.item-image img {
+        width: auto;
+        margin: 0 auto; }
+    body .card .item.item-title {
+      color: #000;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.1;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      white-space: normal;
+      text-align: center;
+      border: none;
+      padding: 15px; }
+    body .card .item.item-head {
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      padding: 25px 0 15px;
+      margin-bottom: 20px;
+      color: #222;
+      border: none;
+      font-weight: 600; }
+      body .card .item.item-head:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100px;
+        background: #222;
+        bottom: 0;
+        left: 50%;
+        margin-left: -50px; }
+    body .card.content {
+      padding: 0px 20px 25px;
+      margin: 10px; }
+      body .card.content p {
+        line-height: 1.4;
+        margin-bottom: 20px;
+        text-align: center; }
+      body .card.content strong {
+        font-weight: 600; }
+      body .card.content ul, body .card.content ol {
+        list-style-type: disc;
+        padding-left: 25px;
+        margin: 0; }
+        body .card.content ul li, body .card.content ol li {
+          line-height: 1.4;
+          margin-bottom: 13px; }
+      body .card.content ol {
+        list-style-type: decimal; }
+  body .item {
+    border-color: #eee; }
+  body .list .item {
+    white-space: normal;
+    line-height: 1.3;
+    font-size: 13px;
+    padding: 15px;
+    letter-spacing: 0.5px; }
+    body .list .item.item-divider {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 15px; }
+    body .list .item .flag {
+      max-width: 50px;
+      padding-right: 10px; }
+      body .list .item .flag img {
+        max-width: 100%; }
+    body .list .item .state {
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #222; }
+  body .list.list-states .item {
+    padding: 12px 15px;
+    line-height: 20px; }
+  body .list.list-waktu .item {
+    padding: 13px;
+    font-size: 11px;
+    border: none; }
+    body .list.list-waktu .item.item-divider {
+      font-size: 11px;
+      color: #222; }
+    body .list.list-waktu .item:nth-child(odd) {
+      background: #fafafa; }
+    body .list.list-waktu .item .date {
+      text-transform: uppercase;
+      font-weight: 600; }
+    body .list.list-waktu .item .imsak, body .list.list-waktu .item .berbuka {
+      text-align: center; }
+    body .list.list-waktu .item .ramadhan {
+      text-align: center;
+      padding: 5px 15px 5px 0;
+      max-width: 45px;
+      display: flex; }
+  body .tabs {
+    background: #222; }
+    body .tabs .tab-item {
+      color: rgba(255, 255, 255, 0.6); }
+      body .tabs .tab-item.tab-item-active {
+        color: #fff; }
+    body .tabs .ion-ios-moon:before {
+      content: "\f468";
+      font-size: 54px;
+      position: relative;
+      top: -11px; }
+    body .tabs .ion-ios-moon-outline:before {
+      content: "\f467";
+      font-size: 54px;
+      position: relative;
+      top: -11px; }
+  body .zakat-wajib .item {
+    border: none; }
+  body .zakat-wajib .item-wajib {
+    font-size: 13px;
+    line-height: 1.35; }
+  body ul.content {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 20px 20px 30px; }
+    body ul.content li {
+      line-height: 1.3;
+      margin-bottom: 7px; }
+  body .zakat-kadar .item-kadar {
+    font-size: 13px;
+    padding: 15px;
+    letter-spacing: 0.5px; }
+    body .zakat-kadar .item-kadar .col:nth-child(2) {
+      font-weight: 600;
+      text-transform: uppercase; }
+    body .zakat-kadar .item-kadar .col:nth-child(3) {
+      text-align: right; }
