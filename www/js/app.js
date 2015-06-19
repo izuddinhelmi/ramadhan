@@ -219,13 +219,197 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.waktu-kedah', {
+    url: '/waktu/kedah',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kedah.html',
+      }
+    }
+  })
+  .state('tab.waktu-kedah-1', {
+    url: '/waktu/kedah/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kedah/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-kedah-2', {
+    url: '/waktu/kedah/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kedah/2.html',
+      }
+    }
+  })
+  .state('tab.waktu-kedah-3', {
+    url: '/waktu/kedah/3',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kedah/3.html',
+      }
+    }
+  })
+  .state('tab.waktu-kedah-4', {
+    url: '/waktu/kedah/4',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kedah/4.html',
+      }
+    }
+  })
+  .state('tab.waktu-kedah-5', {
+    url: '/waktu/kedah/5',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kedah/5.html',
+      }
+    }
+  })
+  .state('tab.waktu-kedah-6', {
+    url: '/waktu/kedah/6',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kedah/6.html',
+      }
+    }
+  })
+  .state('tab.waktu-kedah-7', {
+    url: '/waktu/kedah/7',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kedah/7.html',
+      }
+    }
+  })
+  .state('tab.waktu-penang', {
+    url: '/waktu/penang',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/penang.html',
+      }
+    }
+  })
+  .state('tab.waktu-perak', {
+    url: '/waktu/perak',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/perak.html',
+      }
+    }
+  })
+  .state('tab.waktu-selangor', {
+    url: '/waktu/selangor',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/selangor.html',
+      }
+    }
+  })
+  .state('tab.waktu-kl', {
+    url: '/waktu/kl',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kl.html',
+      }
+    }
+  })
+  .state('tab.waktu-putrajaya', {
+    url: '/waktu/putrajaya',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/putrajaya.html',
+      }
+    }
+  })
+  .state('tab.waktu-ns', {
+    url: '/waktu/ns',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/ns.html',
+      }
+    }
+  })
+  .state('tab.waktu-melaka', {
+    url: '/waktu/melaka',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/melaka.html',
+      }
+    }
+  })
+  .state('tab.waktu-johor', {
+    url: '/waktu/johor',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/johor.html',
+      }
+    }
+  })
+  .state('tab.waktu-pahang', {
+    url: '/waktu/pahang',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/pahang.html',
+      }
+    }
+  })
+  .state('tab.waktu-terengganu', {
+    url: '/waktu/terengganu',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/terengganu.html',
+      }
+    }
+  })
+  .state('tab.waktu-kelantan', {
+    url: '/waktu/kelantan',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kelantan.html',
+      }
+    }
+  })
+  .state('tab.waktu-sarawak', {
+    url: '/waktu/sarawak',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah', {
+    url: '/waktu/sabah',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah.html',
+      }
+    }
+  })
+  .state('tab.waktu-labuan', {
+    url: '/waktu/labuan',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/labuan.html',
+      }
+    }
+  })
+
+  .state('tab.log', {
+    url: '/log',
+    views: {
+      'tab-log': {
+        templateUrl: 'templates/tab-log.html',
+      }
+    }
+  })
+
+  .state('tab.soal', {
+    url: '/soal',
+    views: {
+      'tab-soal': {
+        templateUrl: 'templates/tab-soal.html',
       }
     }
   });

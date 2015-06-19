@@ -1,25 +1,49 @@
-<ion-view view-title="Ramadhan">
+<ion-view view-title="Terawih">
   <ion-content>
     <div class="tab-header">
       <div class="row">
         <div class="col align-center">
-            <h1>Terawih</h1>
             <p>Abu Hurairah R.A. berkata : Bahawa Rasulullah S.A.W. bersabda, "Sesiapa yang melaksanakan Ramadhan dengan penuh keimanan dan pengharapan, akan diampunkan baginya dosanya yang lalu." 
             </br>(Hadith riwayat Muslim)</p>
         </div>
       </div>
     </div>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
+      <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap">
+        <h2>Pensyariatan</h2>
         <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
       </ion-item>
+
+      <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap">
+        <h2>Bilangan Rakaat</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+      <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap">
+        <h2>Solat Terawih Berjemaah</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+      <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap">
+        <h2>Waktu</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+      <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap">
+        <h2>Pelaksanaan</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+      <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap">
+        <h2>Niat</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+      <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap">
+        <h2>Bacaan</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
     </ion-list>
   </ion-content>
 </ion-view>

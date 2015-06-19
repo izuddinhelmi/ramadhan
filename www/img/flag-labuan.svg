@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="50px" viewBox="0 0 100 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>flag-labuan</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-6" sketch:type="MSArtboardGroup" transform="translate(-23.000000, -159.000000)">
+            <g id="flag-labuan" sketch:type="MSLayerGroup" transform="translate(23.000000, 159.000000)">
+                <rect id="Rectangle-path" fill="#003573" sketch:type="MSShapeGroup" x="0" y="0" width="100" height="50"></rect>
+                <rect id="Rectangle-path" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="100" height="33.3333333"></rect>
+                <rect id="Rectangle-path" fill="#DC221F" sketch:type="MSShapeGroup" x="0" y="0" width="100" height="16.6666667"></rect>
+                <g id="Group" transform="translate(32.142857, 12.388393)" fill="#FFCC00" sketch:type="MSShapeGroup">
+                    <path d="M25.2082366,23.0283482 L24.3047433,16.5888393 L20.5812388,21.9777902 L22.630346,15.7934152 L16.8795201,19.0722098 L21.4753683,14.3679688 L14.8362723,14.8870536 L21.0685937,12.5945536 L14.8561652,10.251183 L21.4905804,10.8245424 L16.9352679,6.0828683 L22.6577455,9.40851563 L20.6617857,3.20761719 L24.3389174,8.626875 L25.2976339,2.19497768 L26.2011161,8.63448661 L29.9246652,3.24548438 L27.875558,9.42983259 L33.6263393,6.15107143 L29.0304688,10.8553683 L35.6696429,10.33625 L29.4372768,12.6287612 L35.6496652,14.9720982 L29.0152902,14.3987723 L33.5706473,19.1404018 L27.8481027,15.8148438 L29.8440848,22.015625 L26.1669643,16.5964286 L25.2082366,23.0283482 L25.2082366,23.0283482 Z" id="Shape"></path>
+                    <path d="M20.1861607,2.70232143 C20.1861607,2.70232143 14.8493304,0.561610491 10.8401228,2.45527902 C6.85070312,4.33962054 3.89622768,8.15920759 4.30555804,13.0561384 C4.83300223,19.3662946 9.16234375,21.9533482 11.3001116,22.9135045 C15.3160714,24.7169643 20.0947545,22.5129464 20.0947545,22.5129464 C20.0947545,22.5129464 16.740625,25.1239955 12.4907366,25.1590402 C6.858125,25.2053571 0.289917411,20.3707589 0.0380915179,12.846317 C-0.183147321,6.30570312 5.68478795,0.426107143 11.371317,0.113857143 C16.4754464,-0.16640625 20.1861607,2.70232143 20.1861607,2.70232143 L20.1861607,2.70232143 Z" id="Shape" stroke="#FFD100" stroke-width="0.75"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

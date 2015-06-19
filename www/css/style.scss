@@ -1,66 +1,16 @@
+@import 'fonts';
+
 $primary: #5539A4;
 $dark: #2D3947;
 $dark : #222;
 $background: #EFF3F6;
-$font-stack: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('../fonts/proximanova-extrabold-webfont.eot');
-    src: url('../fonts/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-extrabold-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-extrabold-webfont.woff') format('woff'),
-         url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold') format('svg');
-    font-weight: 800;
-}
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('../fonts/proximanova-light-webfont.eot');
-    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-light-webfont.woff') format('woff'),
-         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-light-webfont.svg#proxima_novalight') format('svg');
-    font-weight: 300;
-}
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('../fonts/proximanova-regular-webfont.eot');
-    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
-         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('../fonts/proximanova-semibold-webfont.eot');
-    src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
-         url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'proxima_nova_rgbold';
-    src: url('../fonts/proximanova-bold-webfont.eot');
-    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
-         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
-    font-weight: 700;
-}
+$font-stack: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 body {
 	font-family: "Proxima Nova", sans-serif;
 	background:#EFF3F6;
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6, strong {
 		font-family: $font-stack;
 		font-weight: 600;
 	}
@@ -75,8 +25,9 @@ body {
 			color: #fff;
 			font-weight: 600;
 			text-transform: uppercase;
-			font-size: 15px;
+			font-size: 17px;
 			letter-spacing: 1px;
+			font-family: $font-stack;
 		}
 
 		.button {
@@ -115,7 +66,8 @@ body {
 	// }
 
 	.tab-header {
-		background: #222;
+		background: #222 url(../img/bg.png);
+		background-size: 100%;
 		color: #fff;
 		padding:20px 0;
 		text-align: center;
@@ -136,7 +88,17 @@ body {
 			margin:0;
 		}
 	}
-
+	.scroll {
+		> p {
+			width: 80%;
+			font-style: italic;
+			color: rgba(0,0,0,0.7);
+			font-size: 12px;
+			line-height: 1.4;
+			margin:0 auto 20px;
+			text-align: center;
+		}
+	}
 	.card {
 		box-shadow: none;
 		background:#fff;
@@ -145,7 +107,9 @@ body {
 		a {
 			text-decoration: none;
 		}
+
 		.item {
+			background:transparent;
 			&.item-image {
 				height: 80px;
 				margin-top:10px;
@@ -162,7 +126,7 @@ body {
 			}
 			&.item-title {
 				color: #000;
-				font-weight: 600;
+				font-weight: bold;
 				font-size: 11px;
 				line-height: 1.1;
 				letter-spacing: 0.3px;
@@ -175,14 +139,17 @@ body {
 			&.item-head {
 				font-size: 14px;
 				letter-spacing: 1px;
+				line-height: 1.2;
 				text-align: center;
 				text-transform: uppercase;
 				position: relative;
-				padding:25px 0 15px;
+				padding:0 0 15px;
 				margin-bottom: 20px;
 				color: #222;
 				border:none;
-				font-weight: 600;
+				font-weight: bold;
+				font-family: $font-stack;
+				white-space: normal;
 				&:after {
 					content:'';
 					position: absolute;
@@ -196,33 +163,58 @@ body {
 			}
 		}
 		&.content {
-			padding:0px 20px 25px;
+			padding:25px 20px 25px;
 			margin: 10px;
-			// .item-head {
-			// 	text-align: left;
-			// 	padding-bottom: 5px;
-			// 	margin-bottom: 15px;
-			// 	&:after {
-			// 		left:0;
-			// 		margin:0;
-			// 		width: 100%;
-			// 	}
-			// }
+			font-size: 13px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			.item-head {
+				text-align: left;
+				padding-bottom: 5px;
+				margin-bottom: 15px;
+				
+				&:after {
+					left:0;
+					margin:0;
+					width: 100%;
+				}
+			}
 			p {
 				line-height: 1.4;
-				margin-bottom: 20px;
-				text-align: center;
+				font-size: 13px;
+				margin-bottom: 15px;
+				//text-align: center;
 			}
 			strong {
-				font-weight: 600;
+				font-weight: 500;
+				font-size: 14px;
 			}
 			ul, ol {
 				list-style-type: disc;
-				padding-left: 25px;
+				padding-left: 20px;
 				margin:0;
 				li {
 					line-height: 1.4;
 					margin-bottom: 13px;
+					font-size: 13px;
+
+					p {
+						text-align: left;
+						margin-bottom: 5px;
+						font-size: 13px
+					}
+
+					> ul {
+						margin-top: 5px;
+						margin-bottom: 10px;
+						li {
+							margin-bottom: 3px;
+						}
+					}
+				}
+				& + p {
+					margin-top: 20px;
 				}
 			}
 			ol {
@@ -260,6 +252,7 @@ body {
 
 			.state {
 				font-weight: 600;
+				font-size: 12px;
 				text-transform: uppercase;
 				color: #222;
 			}
@@ -268,35 +261,67 @@ body {
 			.item {
 				padding: 12px 15px;
 				line-height: 20px;
+				font-family: $font-stack;
+				font-weight: 400;
 			}
 		}
 		&.list-waktu {
+			right:-1px;
 			.item {
 				padding: 13px;
 				font-size: 11px;
 				border:none;
-				&.item-divider {
-					font-size: 11px;
-					color: #222;
-				}
+				font-family: $font-stack;
+
 				&:nth-child(odd) {
 					background: #fafafa;
 				}
 				.date {
 					text-transform: uppercase;
 					font-weight: 600;
+					//text-align: center;
 				}
 				.imsak, .berbuka {
 					text-align: center;
 				}
 				.ramadhan {
-					text-align: center;
 					padding:5px 15px 5px 0;
-					max-width: 45px;
+					max-width: 50px;
 					display: flex;
+				}
+				&.item-divider {
+					font-size: 12px;
+					color: #222;
+					background:#FCAE2C;
+					color: #fff;
+					padding: 8px 13px 10px;
+					line-height: 1;
+					color: rgba(0,0,0,0.6);
+					font-family: $font-stack;
+					font-weight: 700;
 				}
 			}
 			
+		}
+		&.list-zones {
+			.item {
+				padding: 13px;
+				font-size: 12px;
+				border:none;
+				font-family: $font-stack;
+
+				&:nth-child(odd) {
+					background: #fafafa;
+				}
+
+				.zon {
+					text-transform: uppercase;
+					font-weight: 600;
+				}
+				.area {
+					line-height: 1.2;
+				}
+			}
 		}
 	}
 

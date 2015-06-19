@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="50px" viewBox="0 0 100 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>flag-kl</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-6" sketch:type="MSArtboardGroup" transform="translate(-133.000000, -99.000000)">
+            <g id="flag-kl" sketch:type="MSLayerGroup" transform="translate(133.000000, 99.000000)">
+                <rect id="Rectangle-path" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="100" height="50"></rect>
+                <rect id="Rectangle-path" fill="#00356A" sketch:type="MSShapeGroup" x="0" y="16.6666667" width="100" height="16.6666667"></rect>
+                <path d="M0,3.57142857 L100,3.57142857 M0,8.33333333 L100,8.33333333 M0,13.0952381 L100,13.0952381 M0,36.9047619 L100,36.9047619 M0,41.6666667 L100,41.6666667 M0,46.4285714 L100,46.4285714" id="Shape" stroke="#DC241F" stroke-width="2.5" fill="#000000" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval" fill="#FFD100" sketch:type="MSShapeGroup" cx="18.8802083" cy="25" r="6.25"></circle>
+                <circle id="Oval" fill="#00356A" sketch:type="MSShapeGroup" cx="20.1822917" cy="25" r="5.46875"></circle>
+                <path d="M25.1302083,19.7916667 L25.593936,22.96875 L27.390811,20.3072917 L26.4298735,23.3710938 L29.2020089,21.7526042 L27.0066964,24.0963542 L30.2083333,23.8411458 L27.2135417,25 L30.2083333,26.1588542 L27.0066964,25.9036458 L29.2020089,28.2473958 L26.4298735,26.6289063 L27.390811,29.6927083 L25.593936,27.03125 L25.1302083,30.2083333 L24.6668527,27.03125 L22.8712798,29.6927083 L23.8309152,26.6289063 L21.0587798,28.2473958 L23.2527902,25.9036458 L20.0520833,26.1588542 L23.046875,25 L20.0520833,23.8411458 L23.2527902,24.0963542 L21.0587798,21.7526042 L23.8309152,23.3710938 L22.8699777,20.3072917 L24.6668527,22.96875 L25.1302083,19.7916667 Z" id="Shape" fill="#FFD100" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

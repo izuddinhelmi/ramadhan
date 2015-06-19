@@ -1,0 +1,98 @@
+//Proxima Nova
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-semibold-webfont.eot');
+    src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-extrabold-webfont.eot');
+    src: url('../fonts/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-extrabold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold') format('svg');
+    font-weight: 800;
+}
+
+
+//DIN
+@font-face {
+    font-family: 'DIN';
+    src: url('../fonts/din_bold-webfont.eot');
+    src: url('../fonts/din_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_bold-webfont.woff2') format('woff2'),
+         url('../fonts/din_bold-webfont.woff') format('woff'),
+         url('../fonts/din_bold-webfont.ttf') format('truetype'),
+         url('../fonts/din_bold-webfont.svg#dinbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN';
+    src: url('../fonts/din_light-webfont.eot');
+    src: url('../fonts/din_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_light-webfont.woff2') format('woff2'),
+         url('../fonts/din_light-webfont.woff') format('woff'),
+         url('../fonts/din_light-webfont.ttf') format('truetype'),
+         url('../fonts/din_light-webfont.svg#din_lightregular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN';
+    src: url('../fonts/din_medium-webfont.eot');
+    src: url('../fonts/din_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_medium-webfont.woff2') format('woff2'),
+         url('../fonts/din_medium-webfont.woff') format('woff'),
+         url('../fonts/din_medium-webfont.ttf') format('truetype'),
+         url('../fonts/din_medium-webfont.svg#din_mediumregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN';
+    src: url('../fonts/din-webfont.eot');
+    src: url('../fonts/din-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din-webfont.woff2') format('woff2'),
+         url('../fonts/din-webfont.woff') format('woff'),
+         url('../fonts/din-webfont.ttf') format('truetype'),
+         url('../fonts/din-webfont.svg#dinregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}

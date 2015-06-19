@@ -1,10 +1,5 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("../fonts/proximanova-extrabold-webfont.eot");
-  src: url("../fonts/proximanova-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-extrabold-webfont.woff2") format("woff2"), url("../fonts/proximanova-extrabold-webfont.woff") format("woff"), url("../fonts/proximanova-extrabold-webfont.ttf") format("truetype"), url("../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold") format("svg");
-  font-weight: 800; }
-@font-face {
-  font-family: 'Proxima Nova';
   src: url("../fonts/proximanova-light-webfont.eot");
   src: url("../fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-light-webfont.woff2") format("woff2"), url("../fonts/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova-light-webfont.ttf") format("truetype"), url("../fonts/proximanova-light-webfont.svg#proxima_novalight") format("svg");
   font-weight: 300; }
@@ -23,11 +18,40 @@
   src: url("../fonts/proximanova-bold-webfont.eot");
   src: url("../fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../fonts/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
   font-weight: 700; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proximanova-extrabold-webfont.eot");
+  src: url("../fonts/proximanova-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-extrabold-webfont.woff2") format("woff2"), url("../fonts/proximanova-extrabold-webfont.woff") format("woff"), url("../fonts/proximanova-extrabold-webfont.ttf") format("truetype"), url("../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold") format("svg");
+  font-weight: 800; }
+@font-face {
+  font-family: 'DIN';
+  src: url("../fonts/din_bold-webfont.eot");
+  src: url("../fonts/din_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/din_bold-webfont.woff2") format("woff2"), url("../fonts/din_bold-webfont.woff") format("woff"), url("../fonts/din_bold-webfont.ttf") format("truetype"), url("../fonts/din_bold-webfont.svg#dinbold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'DIN';
+  src: url("../fonts/din_light-webfont.eot");
+  src: url("../fonts/din_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/din_light-webfont.woff2") format("woff2"), url("../fonts/din_light-webfont.woff") format("woff"), url("../fonts/din_light-webfont.ttf") format("truetype"), url("../fonts/din_light-webfont.svg#din_lightregular") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'DIN';
+  src: url("../fonts/din_medium-webfont.eot");
+  src: url("../fonts/din_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/din_medium-webfont.woff2") format("woff2"), url("../fonts/din_medium-webfont.woff") format("woff"), url("../fonts/din_medium-webfont.ttf") format("truetype"), url("../fonts/din_medium-webfont.svg#din_mediumregular") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'DIN';
+  src: url("../fonts/din-webfont.eot");
+  src: url("../fonts/din-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/din-webfont.woff2") format("woff2"), url("../fonts/din-webfont.woff") format("woff"), url("../fonts/din-webfont.ttf") format("truetype"), url("../fonts/din-webfont.svg#dinregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
 body {
   font-family: "Proxima Nova", sans-serif;
   background: #EFF3F6; }
-  body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  body h1, body h2, body h3, body h4, body h5, body h6, body strong {
+    font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600; }
   body .bar.bar-stable {
     background: #5539A4;
@@ -37,17 +61,19 @@ body {
       color: #fff;
       font-weight: 600;
       text-transform: uppercase;
-      font-size: 15px;
-      letter-spacing: 1px; }
+      font-size: 17px;
+      letter-spacing: 1px;
+      font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     body .bar.bar-stable .button.back-button {
       color: #fff; }
       body .bar.bar-stable .button.back-button .back-text {
-        font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 14px; }
   body .pane, body .view {
     background: #EFF3F6; }
   body .tab-header {
-    background: #222;
+    background: #222 url(../img/bg.png);
+    background-size: 100%;
     color: #fff;
     padding: 20px 0;
     text-align: center; }
@@ -64,6 +90,14 @@ body {
       color: rgba(255, 255, 255, 0.8);
       font-style: italic;
       margin: 0; }
+  body .scroll > p {
+    width: 80%;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 auto 20px;
+    text-align: center; }
   body .card {
     box-shadow: none;
     background: #fff;
@@ -71,65 +105,94 @@ body {
     min-height: 145px; }
     body .card a {
       text-decoration: none; }
-    body .card .item.item-image {
-      height: 80px;
-      margin-top: 10px;
-      display: -webkit-flex;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      border: none; }
-      body .card .item.item-image img {
-        width: auto;
-        margin: 0 auto; }
-    body .card .item.item-title {
-      color: #000;
-      font-weight: 600;
-      font-size: 11px;
-      line-height: 1.1;
-      letter-spacing: 0.3px;
-      text-transform: uppercase;
-      white-space: normal;
-      text-align: center;
-      border: none;
-      padding: 15px; }
-    body .card .item.item-head {
-      font-size: 14px;
-      letter-spacing: 1px;
-      text-align: center;
-      text-transform: uppercase;
-      position: relative;
-      padding: 25px 0 15px;
-      margin-bottom: 20px;
-      color: #222;
-      border: none;
-      font-weight: 600; }
-      body .card .item.item-head:after {
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 100px;
-        background: #222;
-        bottom: 0;
-        left: 50%;
-        margin-left: -50px; }
+    body .card .item {
+      background: transparent; }
+      body .card .item.item-image {
+        height: 80px;
+        margin-top: 10px;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: none; }
+        body .card .item.item-image img {
+          width: auto;
+          margin: 0 auto; }
+      body .card .item.item-title {
+        color: #000;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 1.1;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        white-space: normal;
+        text-align: center;
+        border: none;
+        padding: 15px; }
+      body .card .item.item-head {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 0 15px;
+        margin-bottom: 20px;
+        color: #222;
+        border: none;
+        font-weight: bold;
+        font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        white-space: normal; }
+        body .card .item.item-head:after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          width: 100px;
+          background: #222;
+          bottom: 0;
+          left: 50%;
+          margin-left: -50px; }
     body .card.content {
-      padding: 0px 20px 25px;
-      margin: 10px; }
+      padding: 25px 20px 25px;
+      margin: 10px;
+      font-size: 13px; }
+      body .card.content:last-child {
+        margin-bottom: 0; }
+      body .card.content .item-head {
+        text-align: left;
+        padding-bottom: 5px;
+        margin-bottom: 15px; }
+        body .card.content .item-head:after {
+          left: 0;
+          margin: 0;
+          width: 100%; }
       body .card.content p {
         line-height: 1.4;
-        margin-bottom: 20px;
-        text-align: center; }
+        font-size: 13px;
+        margin-bottom: 15px; }
       body .card.content strong {
-        font-weight: 600; }
+        font-weight: 500;
+        font-size: 14px; }
       body .card.content ul, body .card.content ol {
         list-style-type: disc;
-        padding-left: 25px;
+        padding-left: 20px;
         margin: 0; }
         body .card.content ul li, body .card.content ol li {
           line-height: 1.4;
-          margin-bottom: 13px; }
+          margin-bottom: 13px;
+          font-size: 13px; }
+          body .card.content ul li p, body .card.content ol li p {
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 13px; }
+          body .card.content ul li > ul, body .card.content ol li > ul {
+            margin-top: 5px;
+            margin-bottom: 10px; }
+            body .card.content ul li > ul li, body .card.content ol li > ul li {
+              margin-bottom: 3px; }
+        body .card.content ul + p, body .card.content ol + p {
+          margin-top: 20px; }
       body .card.content ol {
         list-style-type: decimal; }
   body .item {
@@ -152,30 +215,54 @@ body {
         max-width: 100%; }
     body .list .item .state {
       font-weight: 600;
+      font-size: 12px;
       text-transform: uppercase;
       color: #222; }
   body .list.list-states .item {
     padding: 12px 15px;
-    line-height: 20px; }
-  body .list.list-waktu .item {
-    padding: 13px;
-    font-size: 11px;
-    border: none; }
-    body .list.list-waktu .item.item-divider {
+    line-height: 20px;
+    font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
+  body .list.list-waktu {
+    right: -1px; }
+    body .list.list-waktu .item {
+      padding: 13px;
       font-size: 11px;
-      color: #222; }
-    body .list.list-waktu .item:nth-child(odd) {
+      border: none;
+      font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      body .list.list-waktu .item:nth-child(odd) {
+        background: #fafafa; }
+      body .list.list-waktu .item .date {
+        text-transform: uppercase;
+        font-weight: 600; }
+      body .list.list-waktu .item .imsak, body .list.list-waktu .item .berbuka {
+        text-align: center; }
+      body .list.list-waktu .item .ramadhan {
+        padding: 5px 15px 5px 0;
+        max-width: 50px;
+        display: flex; }
+      body .list.list-waktu .item.item-divider {
+        font-size: 12px;
+        color: #222;
+        background: #FCAE2C;
+        color: #fff;
+        padding: 8px 13px 10px;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.6);
+        font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700; }
+  body .list.list-zones .item {
+    padding: 13px;
+    font-size: 12px;
+    border: none;
+    font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    body .list.list-zones .item:nth-child(odd) {
       background: #fafafa; }
-    body .list.list-waktu .item .date {
+    body .list.list-zones .item .zon {
       text-transform: uppercase;
       font-weight: 600; }
-    body .list.list-waktu .item .imsak, body .list.list-waktu .item .berbuka {
-      text-align: center; }
-    body .list.list-waktu .item .ramadhan {
-      text-align: center;
-      padding: 5px 15px 5px 0;
-      max-width: 45px;
-      display: flex; }
+    body .list.list-zones .item .area {
+      line-height: 1.2; }
   body .tabs {
     background: #222; }
     body .tabs .tab-item {
