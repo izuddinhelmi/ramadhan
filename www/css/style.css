@@ -48,11 +48,17 @@
   font-weight: 400;
   font-style: normal; }
 body {
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #EFF3F6; }
   body h1, body h2, body h3, body h4, body h5, body h6, body strong {
     font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600; }
+  body p {
+    font-size: 13px;
+    white-space: normal;
+    line-height: 1.4;
+    font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.3px; }
   body .bar.bar-stable {
     background: #5539A4;
     border-color: #5539A4;
@@ -84,8 +90,6 @@ body {
       letter-spacing: 2px;
       position: relative; }
     body .tab-header p {
-      font-size: 13px;
-      line-height: 1.4;
       padding: 0 9%;
       color: rgba(255, 255, 255, 0.8);
       font-style: italic;
@@ -168,8 +172,6 @@ body {
           margin: 0;
           width: 100%; }
       body .card.content p {
-        line-height: 1.4;
-        font-size: 13px;
         margin-bottom: 15px; }
       body .card.content strong {
         font-weight: 500;
@@ -199,15 +201,50 @@ body {
     border-color: #eee; }
   body .list .item {
     white-space: normal;
-    line-height: 1.3;
-    font-size: 13px;
     padding: 15px;
-    letter-spacing: 0.5px; }
+    font-size: 13px;
+    white-space: normal;
+    line-height: 1.3;
+    font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    body .list .item h2 {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: -0.3px;
+      color: #222;
+      line-height: 1.3;
+      white-space: normal;
+      margin-bottom: 5px;
+      color: #222; }
+    body .list .item p {
+      font-size: 13px;
+      white-space: normal;
+      color: #444;
+      margin-bottom: 10px; }
+      body .list .item p:last-child {
+        margin-bottom: 0; }
+    body .list .item ul {
+      list-style-type: disc;
+      margin-left: 25px;
+      margin: 8px 0 3px 25px; }
+    body .list .item li {
+      font-size: 13px;
+      white-space: normal;
+      line-height: 1.3;
+      font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: -0.3px;
+      color: #444;
+      margin-bottom: 3px; }
     body .list .item.item-divider {
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-size: 15px; }
+      font-size: 15px;
+      line-height: 1;
+      padding: 10px 15px; }
+      body .list .item.item-divider h2 {
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        margin: 0; }
     body .list .item .flag {
       max-width: 50px;
       padding-right: 10px; }
@@ -292,9 +329,8 @@ body {
       line-height: 1.3;
       margin-bottom: 7px; }
   body .zakat-kadar .item-kadar {
-    font-size: 13px;
-    padding: 15px;
-    letter-spacing: 0.5px; }
+    font-size: 12px;
+    padding: 15px; }
     body .zakat-kadar .item-kadar .col:nth-child(2) {
       font-weight: 600;
       text-transform: uppercase; }

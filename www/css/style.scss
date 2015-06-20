@@ -7,12 +7,20 @@ $background: #EFF3F6;
 $font-stack: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 body {
-	font-family: "Proxima Nova", sans-serif;
+	font-family: $font-stack;
 	background:#EFF3F6;
 
 	h1, h2, h3, h4, h5, h6, strong {
 		font-family: $font-stack;
 		font-weight: 600;
+	}
+
+	p {
+		font-size: 13px;
+		white-space: normal;
+		line-height: 1.4;
+		font-family: $font-stack;
+		letter-spacing: -0.3px;
 	}
 
 	.bar.bar-stable {
@@ -80,13 +88,14 @@ body {
 			position: relative;
 		}
 		p {
-			font-size: 13px;
-			line-height: 1.4;
 			padding:0 9%;
 			color: rgba(255,255,255,0.8);
 			font-style: italic;
 			margin:0;
 		}
+		// img.flag {
+		// 	border:rgba(255,255,255,0.5) solid 1px;
+		// }
 	}
 	.scroll {
 		> p {
@@ -110,6 +119,11 @@ body {
 
 		.item {
 			background:transparent;
+
+			h2 {
+
+			}
+
 			&.item-image {
 				height: 80px;
 				margin-top:10px;
@@ -181,8 +195,6 @@ body {
 				}
 			}
 			p {
-				line-height: 1.4;
-				font-size: 13px;
 				margin-bottom: 15px;
 				//text-align: center;
 			}
@@ -230,16 +242,61 @@ body {
 	.list {
 		.item {
 			white-space: normal;
-			line-height: 1.3;
-			font-size: 13px;
 			padding:15px;
-			letter-spacing: 0.5px;
+
+			font-size: 13px;
+			white-space: normal;
+			line-height: 1.3;
+			font-family: $font-stack;
+
+			h2 {
+				font-weight: 500;
+				font-size: 14px;
+				//text-transform: uppercase;
+				letter-spacing: -0.3px;
+				color: #222;
+				line-height: 1.3;
+				white-space: normal;
+				margin-bottom: 5px;
+				color: #222;
+			}
+			p {
+				font-size: 13px;
+				white-space: normal;
+				color: #444;
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			ul {
+				list-style-type: disc;
+				margin-left: 25px;
+				margin: 8px 0 3px 25px;
+			}
+			li {
+				font-size: 13px;
+				white-space: normal;
+				line-height: 1.3;
+				font-family: $font-stack;
+				letter-spacing: -0.3px;
+				color: #444;
+				margin-bottom: 3px;
+			}
 
 			&.item-divider {
 				font-weight: 600;
 				text-transform: uppercase;
 				letter-spacing: 1px;
 				font-size: 15px;
+				line-height: 1;
+				padding: 10px 15px;
+
+				h2 {
+					font-weight: 700;
+					letter-spacing: 0.3px;
+					margin:0;
+				}
 			}
 
 			.flag {
@@ -371,9 +428,9 @@ body {
 
 	.zakat-kadar {
 		.item-kadar {
-			font-size: 13px;
+			font-size: 12px;
 			padding:15px;
-			letter-spacing: 0.5px;
+			//letter-spacing: 0.5px;
 
 			.col:nth-child(2) {
 				font-weight: 600;

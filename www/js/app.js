@@ -129,6 +129,60 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.terawih', {
+    url: '/terawih',
+    views: {
+      'tab-terawih': {
+        templateUrl: 'templates/tab-terawih.html',
+      }
+    }
+  })
+
+  .state('tab.terawih-hukum', {
+    url: '/terawih/hukum',
+    views: {
+      'tab-terawih': {
+        templateUrl: 'templates/terawih/hukum.html',
+      }
+    }
+  })
+
+  .state('tab.terawih-waktu', {
+    url: '/terawih/waktu',
+    views: {
+      'tab-terawih': {
+        templateUrl: 'templates/terawih/waktu.html',
+      }
+    }
+  })
+
+  .state('tab.terawih-rakaat', {
+    url: '/terawih/rakaat',
+    views: {
+      'tab-terawih': {
+        templateUrl: 'templates/terawih/rakaat.html',
+      }
+    }
+  })
+
+  .state('tab.terawih-rukun', {
+    url: '/terawih/rukun',
+    views: {
+      'tab-terawih': {
+        templateUrl: 'templates/terawih/rukun.html',
+      }
+    }
+  })
+
+  .state('tab.terawih-bacaan', {
+    url: '/terawih/bacaan',
+    views: {
+      'tab-terawih': {
+        templateUrl: 'templates/terawih/bacaan.html',
+      }
+    }
+  })
+
   .state('tab.chats', {
     url: '/chats',
     views: {
