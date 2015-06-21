@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngSanitize'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -20,6 +20,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 })
+
+ 
+.filter('hrefToJS', function ($sce, $sanitize) {
+    return function (text) {
+        var regex = /href="([\S]+)"/g;
+        var newString = $sanitize(text).replace(regex, "onClick=\"window.open('$1', '_blank', 'location=yes')\"");
+        return $sce.trustAsHtml(newString);
+    }
+})
+ 
+
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -129,6 +140,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.puasa-doa-quran', {
+    url: '/puasa/doa-quran',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/doa-quran.html',
+      }
+    }
+  })
+
+  .state('tab.puasa-doa-sunnah', {
+    url: '/puasa/doa-sunnah',
+    views: {
+      'tab-puasa': {
+        templateUrl: 'templates/puasa/doa-sunnah.html',
+      }
+    }
+  })
+
   .state('tab.terawih', {
     url: '/terawih',
     views: {
@@ -183,21 +212,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.chats', {
-    url: '/chats',
+  .state('tab.terawih-niat', {
+    url: '/terawih/niat',
     views: {
-      'tab-chats': {
-        templateUrl: 'templates/tab-chats.html',
-        controller: 'ChatsCtrl'
+      'tab-terawih': {
+        templateUrl: 'templates/terawih/niat.html',
       }
     }
   })
-  .state('tab.chat-detail', {
-    url: '/chats/:chatId',
+
+  .state('tab.terawih-dalil', {
+    url: '/terawih/dalil',
     views: {
-      'tab-chats': {
-        templateUrl: 'templates/chat-detail.html',
-        controller: 'ChatDetailCtrl'
+      'tab-terawih': {
+        templateUrl: 'templates/terawih/dalil.html',
       }
     }
   })

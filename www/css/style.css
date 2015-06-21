@@ -59,6 +59,23 @@ body {
     line-height: 1.4;
     font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: -0.3px; }
+  body hr {
+    box-shadow: none;
+    border: none;
+    border-top: #ccc solid 1px;
+    padding: 10px 0; }
+  body img.full {
+    max-width: 100%; }
+  body img.solat {
+    margin: 0 auto 15px;
+    display: block; }
+  body .solat-head {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    display: block;
+    font-size: 12px !important;
+    letter-spacing: 0.5px; }
   body .bar.bar-stable {
     background: #5539A4;
     border-color: #5539A4;
@@ -75,6 +92,16 @@ body {
       body .bar.bar-stable .button.back-button .back-text {
         font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 14px; }
+    body .bar.bar-stable .button.button-clear .icon {
+      color: #fff; }
+      body .bar.bar-stable .button.button-clear .icon:before {
+        font-size: 17px;
+        line-height: 30px; }
+    body .bar.bar-stable .buttons.buttons-right .right-buttons a {
+      color: #fff; }
+      body .bar.bar-stable .buttons.buttons-right .right-buttons a:before {
+        font-size: 17px;
+        line-height: 28px; }
   body .pane, body .view {
     background: #EFF3F6; }
   body .tab-header {
@@ -83,6 +110,22 @@ body {
     color: #fff;
     padding: 20px 0;
     text-align: center; }
+    body .tab-header.terawih {
+      background: #222 url(../img/cover-terawih.jpg);
+      background-size: 100%;
+      background-position: center bottom; }
+    body .tab-header.waktu {
+      background: #222 url(../img/cover-waktu.jpg);
+      background-size: 100%;
+      background-position: center center; }
+    body .tab-header.zakat {
+      background: #222 url(../img/cover-zakat.jpg);
+      background-size: 100%;
+      background-position: center center; }
+    body .tab-header.puasa {
+      background: #222 url(../img/cover-puasa.jpg);
+      background-size: 100%;
+      background-position: center center; }
     body .tab-header h1 {
       color: #fff;
       font-size: 18px;
@@ -160,7 +203,8 @@ body {
     body .card.content {
       padding: 25px 20px 25px;
       margin: 10px;
-      font-size: 13px; }
+      font-size: 13px;
+      height: auto; }
       body .card.content:last-child {
         margin-bottom: 0; }
       body .card.content .item-head {
@@ -173,6 +217,13 @@ body {
           width: 100%; }
       body .card.content p {
         margin-bottom: 15px; }
+        body .card.content p.arab {
+          font-size: 22px;
+          letter-spacing: 0.5px;
+          line-height: 1.8;
+          text-align: center; }
+        body .card.content p:last-child {
+          margin-bottom: 0; }
       body .card.content strong {
         font-weight: 500;
         font-size: 14px; }
@@ -300,6 +351,26 @@ body {
       font-weight: 600; }
     body .list.list-zones .item .area {
       line-height: 1.2; }
+  body .list-doa .item {
+    text-align: center; }
+    body .list-doa .item .count {
+      background: #5539A4;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: #fff;
+      line-height: 30px;
+      font-weight: 800;
+      font-size: 11px;
+      margin: 0 auto 5px; }
+    body .list-doa .item h2 {
+      font-size: 20px;
+      line-height: 2;
+      font-family: Georgia, serif;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px; }
+    body .list-doa .item p {
+      text-align: left; }
   body .tabs {
     background: #222; }
     body .tabs .tab-item {
@@ -336,3 +407,113 @@ body {
       text-transform: uppercase; }
     body .zakat-kadar .item-kadar .col:nth-child(3) {
       text-align: right; }
+  body .bonus {
+    background: #FCAE2C;
+    background: rgba(0, 0, 0, 0.1);
+    background: #222 url(../img/bg.png);
+    background-size: 100%;
+    padding: 25px 0 0; }
+    body .bonus header {
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 10px;
+      letter-spacing: 0.3px;
+      font-size: 17px;
+      color: #fff; }
+    body .bonus .card {
+      min-height: 100px;
+      margin-bottom: 15px;
+      background: transparent;
+      position: relative; }
+      body .bonus .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 3px; }
+      body .bonus .card .item-image {
+        height: 100px;
+        text-align: center;
+        z-index: 1; }
+      body .bonus .card h3 {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 1.1;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        white-space: normal;
+        text-align: center;
+        border: none;
+        padding: 10px;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 3px;
+        color: #fff; }
+  body .modal {
+    background: #5539A4;
+    padding-top: 70px; }
+    body .modal .bar {
+      background: transparent !important; }
+    body .modal .logo {
+      max-width: 30%;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px; }
+    body .modal .content {
+      color: #fff;
+      text-align: center; }
+      body .modal .content h1 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 22px; }
+      body .modal .content h4 {
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.3px; }
+      body .modal .content .button {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        min-height: 35px;
+        line-height: 35px;
+        border: none;
+        color: #fff;
+        font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 0 12px;
+        width: 110px; }
+      body .modal .content p {
+        margin-bottom: 20px; }
+    body .modal .bar-footer {
+      background: rgba(0, 0, 0, 0.1) !important;
+      color: #fff;
+      border: none; }
+      body .modal .bar-footer .title {
+        font-size: 13px; }
+  body.platform-android .tabs-striped .tabs {
+    border-top: #442d83 solid 1px;
+    background: #442D83;
+    border-bottom-color: #442D83; }
+    body.platform-android .tabs-striped .tabs .tab-item.tab-item-active {
+      border-color: #fff; }
+      body.platform-android .tabs-striped .tabs .tab-item.tab-item-active .tab-title {
+        line-height: 49px;
+        font-weight: bold; }
+    body.platform-android .tabs-striped .tabs .tab-item i {
+      display: none; }
+    body.platform-android .tabs-striped .tabs .tab-item .tab-title {
+      font-family: "DIN", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      display: block;
+      line-height: 50px;
+      font-size: 11px; }

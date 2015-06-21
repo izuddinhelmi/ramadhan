@@ -1,6 +1,9 @@
 <ion-view view-title="Terawih">
+  <ion-nav-buttons side="right">
+    <a ng-controller='PuasaCtrl' ng-click="modal.show()" class="button button-icon icon ion-heart"></a>
+  </ion-nav-buttons>
   <ion-content>
-    <div class="tab-header">
+    <div class="tab-header terawih">
       <div class="row">
         <div class="col align-center">
             <p>Abu Hurairah R.A. berkata : Bahawa Rasulullah S.A.W. bersabda, "Sesiapa yang melaksanakan Ramadhan dengan penuh keimanan dan pengharapan, akan diampunkan baginya dosanya yang lalu." 
@@ -8,35 +11,91 @@
         </div>
       </div>
     </div>
-    <ion-list>
-      <ion-item class="item-divider">
-        <h2>Solat Terawih</h2>
-      </ion-item>
-      <a class="item item-icon-right" href="#/tab/terawih/hukum">
-        <h2>Hukum</h2>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-      </a>
-
-      <a class="item item-icon-right" href="#/tab/terawih/waktu">
-        <h2>Waktu</h2>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-      </a>
-
-      <a class="item item-icon-right" href="#/tab/terawih/rakaat">
-        <h2>Bilangan Rakaat</h2>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-      </a>
-
-      <a class="item item-icon-right" href="#/tab/terawih/rukun">
-        <h2>Rukun</h2>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-      </a>
-
-      <a class="item item-icon-right" href="#/tab/terawih/bacaan">
-        <h2>Bacaan</h2>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-      </a>
-
-    </ion-list>
+    <div class="row">
+      <div class="col-33">
+        <div class="card">
+          <a href="#/tab/terawih/hukum">
+            <div class="item item-image">
+              <img src="img/icon-hukum.svg">
+            </div>
+            <h3 class="item item-title">Hukum</h3>
+          </a>
+        </div>
+      </div>
+      <div class="col-33">
+        <div class="card">
+          <a href="#/tab/terawih/dalil">
+            <div class="item item-image">
+              <img src="img/icon-lafaz.svg">
+            </div>
+            <h3 class="item item-title">Dalil</h3>
+          </a>
+        </div>
+      </div>
+      <div class="col-33">
+        <div class="card">
+          <a href="#/tab/terawih/waktu">
+            <div class="item item-image">
+              <img src="img/icon-waktu.svg">
+            </div>
+            <h3 class="item item-title">Waktu</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-33">
+        <div class="card">
+          <a href="#/tab/terawih/rakaat">
+            <div class="item item-image">
+              <img src="img/icon-rakaat.svg">
+            </div>
+            <h3 class="item item-title">Bilangan Rakaat</h3>
+          </a>
+        </div>
+      </div>
+      <div class="col-33">
+        <div class="card">
+          <a href="#/tab/terawih/rukun">
+            <div class="item item-image">
+              <img src="img/icon-syarat-wajib.svg">
+            </div>
+            <h3 class="item item-title">Rukun</h3>
+          </a>
+        </div>
+      </div>
+      <div class="col-33">
+        <div class="card">
+          <a href="#/tab/terawih/niat">
+            <div class="item item-image">
+              <img src="img/icon-definisi.svg">
+            </div>
+            <h3 class="item item-title">Niat</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-33">
+        <div class="card">
+          <a href="#/tab/terawih/bacaan">
+            <div class="item item-image">
+              <img src="img/icon-bacaan.svg">
+            </div>
+            <h3 class="item item-title">Bacaan</h3>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="col-33">
+        <div class="card">
+          <a href="#/tab/zakat/kadar">
+            <div class="item item-image">
+              <img src="img/icon-witir.svg">
+            </div>
+            <h3 class="item item-title">Solat Witir</h3>
+          </a>
+        </div>
+      </div> -->
+    </div>
   </ion-content>
 </ion-view>

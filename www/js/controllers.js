@@ -1,6 +1,24 @@
 angular.module('starter.controllers', [])
 
-.controller('PuasaCtrl', function($scope) {})
+.controller('PuasaCtrl', function($scope, $ionicModal) {
+
+  // Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/modal.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  // Triggered in the login modal to close it
+  $scope.closeLogin = function() {
+    $scope.modal.hide();
+  };
+
+  // Open the login modal
+  $scope.login = function() {
+    $scope.modal.show();
+  };  
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called

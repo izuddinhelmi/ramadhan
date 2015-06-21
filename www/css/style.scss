@@ -23,6 +23,30 @@ body {
 		letter-spacing: -0.3px;
 	}
 
+	hr {
+		box-shadow: none;
+		border:none;
+		border-top:#ccc solid 1px;
+		padding:10px 0;
+	}
+
+	img.full {
+		max-width: 100%;
+	}
+	img.solat {
+		margin:0 auto 15px;
+		display: block;
+	}
+
+	.solat-head {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold !important;
+		display: block;
+		font-size: 12px !important;
+		letter-spacing: 0.5px;
+	}
+
 	.bar.bar-stable {
 		background: $primary;
 		border-color: $primary;
@@ -46,10 +70,31 @@ body {
 					font-family: $font-stack;
 					font-size: 14px;
 				}
+			}	
+			&.button-clear {
+				.icon {
+					color: #fff;
+					&:before {
+						font-size: 17px;
+						line-height: 30px;
+					}
+				}
+			}		
+		}
+		.buttons {
+			&.buttons-right {
+				.right-buttons {
+					a {
+						color: #fff;
+						&:before {
+							font-size: 17px;
+							line-height: 28px;
+						}
+					}
+				}
 			}
 		}
 	}
-
 	.pane, .view {
 		background: $background;
 	}
@@ -79,6 +124,30 @@ body {
 		color: #fff;
 		padding:20px 0;
 		text-align: center;
+
+		&.terawih {
+			background: #222 url(../img/cover-terawih.jpg);
+			background-size: 100%;
+			background-position: center bottom;
+		}
+
+		&.waktu {
+			background: #222 url(../img/cover-waktu.jpg);
+			background-size: 100%;
+			background-position: center center;
+		}
+
+		&.zakat {
+			background: #222 url(../img/cover-zakat.jpg);
+			background-size: 100%;
+			background-position: center center;
+		}
+
+		&.puasa {
+			background: #222 url(../img/cover-puasa.jpg);
+			background-size: 100%;
+			background-position: center center;
+		}
 
 		h1 {
 			color: #fff;
@@ -180,6 +249,7 @@ body {
 			padding:25px 20px 25px;
 			margin: 10px;
 			font-size: 13px;
+			height: auto;
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -197,6 +267,15 @@ body {
 			p {
 				margin-bottom: 15px;
 				//text-align: center;
+				&.arab {
+					font-size: 22px;
+					letter-spacing: 0.5px;
+					line-height: 1.8;
+					text-align: center;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 			strong {
 				font-weight: 500;
@@ -382,6 +461,32 @@ body {
 		}
 	}
 
+	.list-doa {
+		.item {
+			text-align: center;
+			.count {
+				background: $primary;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				color: #fff;
+				line-height: 30px;
+				font-weight: 800;
+				font-size: 11px;
+				margin:0 auto 5px;
+			}
+			h2 {
+				font-size: 20px;
+				line-height: 2;
+				font-family: Georgia, serif;
+				letter-spacing: 0.5px;
+				margin-bottom: 10px;
+			}
+			p {
+				text-align: left;
+			}
+		}
+	}
 	.tabs {
 		background: $dark;
 
@@ -439,6 +544,153 @@ body {
 
 			.col:nth-child(3) {
 				text-align: right;
+			}
+		}
+	}
+
+	.bonus {
+		background: #FCAE2C;
+		//background: $primary;
+		background:rgba(0,0,0,0.1);
+		background: #222 url(../img/bg.png);
+		background-size: 100%;
+		padding:25px 0 0;
+
+		header {
+			font-weight: 800;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 10px;
+			letter-spacing: 0.3px;
+			font-size: 17px;
+			color: #fff;
+			//color: rgba(0,0,0,0.6)
+		}
+
+		.card {
+			min-height: 100px;
+			margin-bottom: 15px;
+			//background:rgba(255,255,255,0.1);
+			background:transparent;
+			position: relative;
+			//background: rgba(255,255,255,0.2);
+			//border:rgba(255,255,255,0.3) solid 2px;
+			
+			img {
+				width: 100%;
+				height: auto;
+				border-radius: 3px;
+			}
+			.item-image {
+				height: 100px;
+				text-align: center;
+				z-index: 1;
+			}
+			h3 {
+				text-transform: uppercase;
+				font-size: 12px;
+				font-weight: bold;
+				font-size: 11px;
+				line-height: 1.1;
+				letter-spacing: 0.3px;
+				text-transform: uppercase;
+				white-space: normal;
+				text-align: center;
+				border:none;
+				padding:10px;
+				position: absolute;
+				left:10px;
+				right: 10px;
+				bottom: 10px;
+				z-index: 2;
+				background: rgba(0,0,0,0.8);
+				border-radius: 3px;
+				color: #fff;
+			}
+		}
+	}
+
+	.modal {
+		background: $primary;
+		padding-top:70px;
+
+		.bar {background: transparent !important;}
+
+		.logo {
+			max-width: 30%;
+			height: auto;
+			display: block;
+			margin: 0 auto 20px;
+		}
+		.content {
+			color: #fff;
+			text-align: center;
+
+			h1 {
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				font-size: 22px;
+			}
+
+			h4 {
+				color: #fff;
+				font-size: 11px;
+				text-transform: uppercase;
+				font-weight: bold;
+				letter-spacing: 0.3px;
+			}
+			.button {
+				background: rgba(0,0,0,0.2);
+				border-radius: 3px;
+				min-height: 35px;
+				line-height: 35px;
+				border:none;
+				color: #fff;
+				font-family: $font-stack;
+				font-weight: bold;
+				font-size: 11px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				padding:0 12px;
+				width:110px;
+			}
+			p {
+				margin-bottom: 20px;
+			}
+		}
+		.bar-footer {
+			background: rgba(0,0,0,0.1) !important;
+			color: #fff;
+			border:none;
+			.title {
+				font-size: 13px;
+			}
+		}
+	}
+	&.platform-android {
+		.tabs-striped {
+			.tabs {
+				border-top:#442d83 solid 1px;
+				background: #442D83;
+				border-bottom-color: #442D83;
+				.tab-item.tab-item-active {
+					border-color: #fff;
+					.tab-title {
+						line-height: 49px;
+						font-weight: bold;
+					}
+				}
+				.tab-item {
+					i {display: none;}
+					.tab-title {
+						font-family: $font-stack;
+						text-transform: uppercase;
+						display: block;
+						line-height: 50px;
+						font-size: 11px;
+					}
+				}
 			}
 		}
 	}
