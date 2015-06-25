@@ -5,12 +5,12 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngSanitize'])
+angular.module('starter', ['ionic', 'ionic.service.core', 'ionic.service.analytics' , 'starter.controllers', 'starter.services', 'ngSanitize'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $ionicAnalytics) {
   $ionicPlatform.ready(function() {
 
-
+    $ionicAnalytics.register();
 
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
@@ -42,7 +42,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
  
 
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicAppProvider) {
+
+  $ionicAppProvider.identify({
+    app_id: 'c9582909',
+    api_key: 'ea535a8ea9bf9412b202525aaa720d48775c59c8b887e70e'
+  });
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
