@@ -9,18 +9,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
+
+
+
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
     if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
       StatusBar.styleLightContent();
+    }
+
+    if (typeof analytics !== 'undefined'){
+      analytics.startTrackerWithId('UA-64397767-1');
+      analytics.trackView('name-of-template');
+      // analytics.trackView('Screen Title');
+      analytics.trackEvent('Category', 'Action', 'Label', Value);
+      analytics.trackException('Description', Fatal);
+      analytics.trackTiming('Category', IntervalInMilliseconds, 'Variable', 'Label');
+    } else {
+      console.log("Google Analytics plugin could not be loaded.");
     }
   });
 })
-
  
 .filter('hrefToJS', function ($sce, $sanitize) {
     return function (text) {
@@ -381,11 +391,83 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('tab.waktu-perak-1', {
+    url: '/waktu/perak/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/perak/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-perak-2', {
+    url: '/waktu/perak/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/perak/2.html',
+      }
+    }
+  })
+  .state('tab.waktu-perak-3', {
+    url: '/waktu/perak/3',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/perak/3.html',
+      }
+    }
+  })
+  .state('tab.waktu-perak-4', {
+    url: '/waktu/perak/4',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/perak/4.html',
+      }
+    }
+  })
+  .state('tab.waktu-perak-5', {
+    url: '/waktu/perak/5',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/perak/5.html',
+      }
+    }
+  })
+  .state('tab.waktu-perak-6', {
+    url: '/waktu/perak/6',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/perak/6.html',
+      }
+    }
+  })
+  .state('tab.waktu-perak-7', {
+    url: '/waktu/perak/7',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/perak/7.html',
+      }
+    }
+  })
   .state('tab.waktu-selangor', {
     url: '/waktu/selangor',
     views: {
       'tab-waktu': {
         templateUrl: 'templates/waktu/selangor.html',
+      }
+    }
+  })
+  .state('tab.waktu-selangor-1', {
+    url: '/waktu/selangor/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/selangor/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-selangor-2', {
+    url: '/waktu/selangor/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/selangor/2.html',
       }
     }
   })
@@ -413,6 +495,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('tab.waktu-ns-1', {
+    url: '/waktu/ns/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/ns/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-ns-2', {
+    url: '/waktu/ns/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/ns/2.html',
+      }
+    }
+  })
   .state('tab.waktu-melaka', {
     url: '/waktu/melaka',
     views: {
@@ -429,11 +527,92 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('tab.waktu-johor-1', {
+    url: '/waktu/johor/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/johor/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-njohors-2', {
+    url: '/waktu/johor/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/johor/2.html',
+      }
+    }
+  })
+  .state('tab.waktu-johor-3', {
+    url: '/waktu/johor/3',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/johor/3.html',
+      }
+    }
+  })
+  .state('tab.waktu-johor-4', {
+    url: '/waktu/johor/4',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/johor/4.html',
+      }
+    }
+  })
+  
   .state('tab.waktu-pahang', {
     url: '/waktu/pahang',
     views: {
       'tab-waktu': {
         templateUrl: 'templates/waktu/pahang.html',
+      }
+    }
+  })
+  .state('tab.waktu-pahang-1', {
+    url: '/waktu/pahang/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/pahang/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-pahang-2', {
+    url: '/waktu/pahang/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/pahang/2.html',
+      }
+    }
+  })
+  .state('tab.waktu-pahang-3', {
+    url: '/waktu/pahang/3',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/pahang/3.html',
+      }
+    }
+  })
+  .state('tab.waktu-pahang-4', {
+    url: '/waktu/pahang/4',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/pahang/4.html',
+      }
+    }
+  })
+  .state('tab.waktu-pahang-5', {
+    url: '/waktu/pahang/5',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/pahang/5.html',
+      }
+    }
+  })
+  .state('tab.waktu-pahang-6', {
+    url: '/waktu/pahang/6',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/pahang/6.html',
       }
     }
   })
@@ -445,11 +624,59 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('tab.waktu-terengganu-1', {
+    url: '/waktu/terengganu/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/terengganu/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-terengganu-2', {
+    url: '/waktu/terengganu/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/terengganu/2.html',
+      }
+    }
+  })
+  .state('tab.waktu-terengganu-3', {
+    url: '/waktu/terengganu/3',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/terengganu/3.html',
+      }
+    }
+  })
+  .state('tab.waktu-terengganu-4', {
+    url: '/waktu/terengganu/4',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/terengganu/4.html',
+      }
+    }
+  })
   .state('tab.waktu-kelantan', {
     url: '/waktu/kelantan',
     views: {
       'tab-waktu': {
         templateUrl: 'templates/waktu/kelantan.html',
+      }
+    }
+  })
+  .state('tab.waktu-kelantan-1', {
+    url: '/waktu/kelantan/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kelantan/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-kelantan-2', {
+    url: '/waktu/kelantan/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/kelantan/2.html',
       }
     }
   })
@@ -461,11 +688,155 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('tab.waktu-sarawak-1', {
+    url: '/waktu/sarawak/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-sarawak-2', {
+    url: '/waktu/sarawak/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak/2.html',
+      }
+    }
+  })
+  .state('tab.waktu-sarawak-3', {
+    url: '/waktu/sarawak/3',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak/3.html',
+      }
+    }
+  })
+  .state('tab.waktu-sarawak-4', {
+    url: '/waktu/sarawak/4',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak/4.html',
+      }
+    }
+  })
+  .state('tab.waktu-sarawak-5', {
+    url: '/waktu/sarawak/5',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak/5.html',
+      }
+    }
+  })
+  .state('tab.waktu-sarawak-6', {
+    url: '/waktu/sarawak/6',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak/6.html',
+      }
+    }
+  })
+  .state('tab.waktu-sarawak-7', {
+    url: '/waktu/sarawak/7',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak/7.html',
+      }
+    }
+  })
+  .state('tab.waktu-sarawak-8', {
+    url: '/waktu/sarawak/8',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak/8.html',
+      }
+    }
+  })
+  .state('tab.waktu-sarawak-9', {
+    url: '/waktu/sarawak/9',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sarawak/9.html',
+      }
+    }
+  })
   .state('tab.waktu-sabah', {
     url: '/waktu/sabah',
     views: {
       'tab-waktu': {
         templateUrl: 'templates/waktu/sabah.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah-1', {
+    url: '/waktu/sabah/1',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah/1.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah-2', {
+    url: '/waktu/sabah/2',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah/2.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah-3', {
+    url: '/waktu/sabah/3',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah/3.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah-4', {
+    url: '/waktu/sabah/4',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah/4.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah-5', {
+    url: '/waktu/sabah/5',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah/5.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah-6', {
+    url: '/waktu/sabah/6',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah/6.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah-7', {
+    url: '/waktu/sabah/7',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah/7.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah-8', {
+    url: '/waktu/sabah/8',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah/8.html',
+      }
+    }
+  })
+  .state('tab.waktu-sabah-9', {
+    url: '/waktu/sabah/9',
+    views: {
+      'tab-waktu': {
+        templateUrl: 'templates/waktu/sabah/9.html',
       }
     }
   })

@@ -500,6 +500,19 @@ body {
       border: none; }
       body .modal .bar-footer .title {
         font-size: 13px; }
+  body .tabs .tab-item .icon.solat {
+    background-repeat: no-repeat;
+    height: 32px;
+    background-size: 40px;
+    background-position: center;
+    background-image: url("../img/solat.svg"); }
+  body .tabs .tab-item .icon.solat-outline {
+    background-repeat: no-repeat;
+    height: 32px;
+    background-size: 40px;
+    background-position: center;
+    background-image: url("../img/solat-outline.svg");
+    opacity: 0.6; }
   body.platform-android .tabs-striped .tabs {
     border-top: #442d83 solid 1px;
     background: #442D83;

@@ -35,6 +35,29 @@ angular.module('starter.controllers', [])
   }
 })
 
+.controller('AwesomeController', function($scope) {
+    if(typeof analytics !== undefined) { analytics.trackView("Awesome Controller"); }
+ 
+    $scope.initEvent = function() {
+        if(typeof analytics !== undefined) { analytics.trackEvent("Category", "Action", "Label", 25); }
+    }
+})
+
+.controller('AnalyticsCtrl', function($scope) {
+    if(typeof analytics !== undefined) { 
+      analytics.trackView("Ramadhan App"); 
+      analytics.trackView("Screen Title"); 
+    }
+ 
+    $scope.initEvent = function() {
+        if(typeof analytics !== undefined) { 
+          analytics.startTrackerWithId('UA-XXXX-YY');
+          analytics.trackView('Screen Title');
+          analytics.trackEvent("Category", "Action", "Label", 25); 
+        }
+    }
+})
+
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
